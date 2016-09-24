@@ -7,7 +7,6 @@ copyback:
 	@cp ~/.zshrc ~/.dotfiles/
 
 updaterepo:
-	@git status
 	@git add --all
 	@git commit -m "autoupdate repo"
 	@git push
