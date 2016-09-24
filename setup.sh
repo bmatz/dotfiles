@@ -1,8 +1,45 @@
 #!/bin/bash
 
 #install essentials 
-sudo apt-get install curl -y
-sudo apt-get install wget -y
-sudo apt-get install git -y
+echo ===========================
+echo == Installing essentials ==
+echo ===========================
+echo
+sudo apt-get install curl
+sudo apt-get install wget
+
 #install zsh
+echo
+echo ==============================
+echo == Installing zsh/oh-my-zsh ==
+echo ==============================
+echo
+sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 #download fonts
+echo
+echo ================================================
+echo == Downloading and installing PowerLine fonts ==
+echo ================================================
+echo
+git clone git@github.com:powerline/fonts.git ~/.fonts
+~/.fonts/install.sh
+
+#autoremove packages which are no longer required
+echo
+echo ======================================================
+echo == Autoremove packages which are no longer required ==
+echo ======================================================
+echo
+sudo apt-get autoremove -y
+
+#copying dotfiles to homefolder
+echo
+echo ====================================
+echo == Copying dotfiles to homefolder ==
+echo ====================================
+echo
+cp .tmux.conf ~/.tmux.conf
+cp .gitconfig ~/.gitconfig
+cp .zshrc ~/.zshrc 
