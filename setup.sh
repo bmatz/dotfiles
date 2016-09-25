@@ -23,6 +23,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo
 echo ================================================
 echo == Downloading and installing PowerLine fonts ==
+echo == Use: Source Code Pro f. PL. Regular 12     ==
 echo ================================================
 echo
 git clone git@github.com:powerline/fonts.git ~/.fonts
