@@ -1,6 +1,15 @@
 install:
 	@./setup.sh
 
+install-node:
+	@./setup-node.sh
+
+install-docker:
+	@./setup-docker.sh
+
+install-docker-compose:
+	@./setup-docker-compose.sh
+
 copyback:
 	@cp ~/.gitconfig ~/.dotfiles/
 	@cp ~/.tmux.conf ~/.dotfiles/
