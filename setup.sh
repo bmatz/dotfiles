@@ -8,6 +8,7 @@ echo
 sudo apt-get install curl
 sudo apt-get install wget
 sudo apt-get install vim
+sudo apt-get install tmux
 
 #install zsh
 echo
