@@ -12,7 +12,7 @@ sudo apt-get update
 sudo apt-get purge lxc-docker
 sudo apt-cache policy docker-engine
 
-sudo apg-get update
+sudo apt-get update
 sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 
 sudo apt-get update
