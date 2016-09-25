@@ -8,7 +8,7 @@ install-docker:
 	@./setup-docker.sh
 
 install-docker-compose:
-	@./setup-docker-compose.sh
+	@sudo ./setup-docker-compose.sh
 
 copyback:
 	@cp ~/.gitconfig ~/.dotfiles/
