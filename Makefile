@@ -1,3 +1,5 @@
+install-all: install install-node install-docker install-docker-compose
+
 install:
 	@./setup.sh
 
