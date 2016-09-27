@@ -5,11 +5,11 @@ echo ===========================
 echo == Installing essentials ==
 echo ===========================
 echo
-sudo apt-get update
-sudo apt-get install curl
-sudo apt-get install wget
-sudo apt-get install vim
-sudo apt-get install tmux
+sudo apt-get update -y
+sudo apt-get install curl -y
+sudo apt-get install wget -y
+sudo apt-get install vim -y
+sudo apt-get install tmux -y
 
 #install zsh
 echo
@@ -17,7 +17,7 @@ echo ==============================
 echo == Installing zsh/oh-my-zsh ==
 echo ==============================
 echo
-sudo apt-get install zsh
+sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #download fonts
