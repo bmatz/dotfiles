@@ -17,8 +17,12 @@ echo ==============================
 echo == Installing zsh/oh-my-zsh ==
 echo ==============================
 echo
+sudo groupadd chsh
+sudo usermod -aG chsh $USER
+sudo sed -i '/auth       required   pam_shells.so/ c\auth        sufficient    pam_wheel.so trust group=chsh' /etc/pam.d/chsh
 sudo apt-get install -y zsh 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh ./setup-oh-my-zsh.sh
 
 #download fonts
 echo
