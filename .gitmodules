@@ -13,3 +13,6 @@
 [submodule "vim/.vim/bundle/smart-tabs.git"]
 	path = vim/.vim/bundle/smart-tabs.git
 	url = https://github.com/vim-scripts/smart-tabs.git
+[submodule "vim/.vim/bundle/easymotion.git"]
+	path = vim/.vim/bundle/easymotion.git
+	url = https://github.com/lokaltog/vim-easymotion.git
