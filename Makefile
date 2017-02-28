@@ -12,14 +12,49 @@ install-docker:
 install-docker-compose:
 	@sudo ./setup-docker-compose.sh
 
-copyback:
-	@cp ~/.gitconfig ~/.dotfiles/
-	@cp ~/.tmux.conf ~/.dotfiles/
-	@cp ~/.zshrc ~/.dotfiles/
+copytorepobasics:
+	@cp ~/.gitconfig .
+	@cp ~/.tmux.conf .
+	@cp ~/.vimrc ./vim/
+	@cp -r ~/.vim/startup ./vim/.vim/startup
+
+coptytorepobash:
+	@cp ~/.zshrc .
+
+copytorepocygwins:
+	@cp ~/.minttyrc .
+	@cp ~/.dir_colors .
+	@cp ~/.zshrc ./.zshrc.cygwin
+	@cp ~/.bashrc ./.bashrc.cygwin
 
 updaterepo:
 	@git add --all
 	@git commit -m "autoupdate repo"
 	@git push
 
-update: copyback updaterepo
+push-bash: copytorepobasics coptytorepobash updaterepo
+push-cygwin: copytorepobasics copytorepocygwins updaterepo
+
+pullrepo:
+	@git pull
+
+copyhomebasics: 
+	@cp ./vim/.vimrc ~/
+	@cp -r ./vim/.vim/startup ~/.vim/startup
+	@cp -r ./vim/.vim/bundle ~/.vim/bundle 
+	@cp -r ./vim/.vim/autoload ~/.vim/autoload
+	@cp ./.gitconfig ~/
+	@cp ./.tmux.conf ~/
+
+copyhomebash:
+	@cp ./.zshrc ~/
+
+copyhomecygwins:
+	@cp ./.zshrc.cygwin ~/.zshrc
+	@cp ./.bashrc.cygwin ~/.bashrc
+	@cp ./.dir_colors ~/
+	@cp ./.minttyrc ~/
+
+pull-bash: pullrepo copyhomebasics copyhomebash
+pull-cygwin: pullrepo copyhomebasics copyhomecygwins
+

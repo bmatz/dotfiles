@@ -1,5 +1,7 @@
 [user]
-	email = bernhard@trigo.at
 	name = Bernhard Matz
+	email = bernhard@trigo.at
+[core]
+	autcrlf = input
 [push]
 	default = simple

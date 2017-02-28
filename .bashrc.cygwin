@@ -1,0 +1,6 @@
+# If not running interactively, don't do anything
+[[ "$-" != *i* ]] && return
+# Alias for a quick exit with e
+alias e='exit'
+# open tmux with unnamed session
+tmux new-session -s Default &> /dev/null
