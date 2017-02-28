@@ -43,7 +43,7 @@ copyhomebasics:
 	@cp -r ./vim/.vim/startup ~/.vim
 	@cp -r ./vim/.vim/bundle ~/.vim 
 	@cp -r ./vim/.vim/autoload ~/.vim
-	@cp -r ./vim/.vim/colors ~/.vim
+	@cp ./vim/.vim/colors/monokai.git/colors/monkai.vim ~/.vim/colors/monokai.vim
 	@cp ./.gitconfig ~/
 	@cp ./.tmux.conf ~/
 
