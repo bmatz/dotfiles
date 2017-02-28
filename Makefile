@@ -40,9 +40,9 @@ pullrepo:
 
 copyhomebasics: 
 	@cp ./vim/.vimrc ~/
-	@cp -r ./vim/.vim/startup ~/.vim/startup
-	@cp -r ./vim/.vim/bundle ~/.vim/bundle 
-	@cp -r ./vim/.vim/autoload ~/.vim/autoload
+	@cp -r ./vim/.vim/startup ~/.vim
+	@cp -r ./vim/.vim/bundle ~/.vim 
+	@cp -r ./vim/.vim/autoload ~/.vim
 	@cp ./.gitconfig ~/
 	@cp ./.tmux.conf ~/
 
