@@ -2,7 +2,7 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-
+colorscheme monokai
 
 set visualbell " disable bell
 
@@ -35,3 +35,6 @@ autocmd VimEnter * if exists("s:std_in") | wincmd p | endif
 " autocmd vimenter * wincmd p
 
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let g:Powerline_symbols = 'fancy'
+call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')

@@ -16,3 +16,12 @@
 [submodule "vim/.vim/bundle/easymotion.git"]
 	path = vim/.vim/bundle/easymotion.git
 	url = https://github.com/lokaltog/vim-easymotion.git
+[submodule "vim/.vim/bundle/powerline.git"]
+	path = vim/.vim/bundle/powerline.git
+	url = https://github.com/lokaltog/vim-powerline.git
+[submodule "vim/.vim/bundle/fugitive.git"]
+	path = vim/.vim/bundle/fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/colors/monokai.git"]
+	path = vim/.vim/colors/monokai.git
+	url = https://github.com/sickill/vim-monokai.git
