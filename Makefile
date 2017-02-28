@@ -16,7 +16,7 @@ copytorepobasics:
 	@cp ~/.gitconfig .
 	@cp ~/.tmux.conf .
 	@cp ~/.vimrc ./vim/
-	@cp -r ~/.vim/startup ./vim/.vim/startup
+	@cp -r ~/.vim/startup ./vim/.vim
 
 coptytorepobash:
 	@cp ~/.zshrc .
