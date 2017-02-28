@@ -39,6 +39,10 @@ pullrepo:
 	@git pull
 
 copyhomebasics: 
+	@mkdir -p ~/.vim/colors
+	@mkdir ~/.vim/autload
+	@mkdir ~/.vim/starup
+	@mkdir ~/.vim/budle
 	@cp ./vim/.vimrc ~/
 	@cp -r ./vim/.vim/startup ~/.vim
 	@cp -r ./vim/.vim/bundle ~/.vim 
