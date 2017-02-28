@@ -1,0 +1,15 @@
+[submodule "vim/.vim/bundle/autopairs.git"]
+	path = vim/.vim/bundle/autopairs.git
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim/.vim/bundle/nerdtree.git"]
+	path = vim/.vim/bundle/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/bundle/syntastic.git"]
+	path = vim/.vim/bundle/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/.vim/bundle/supertab.git"]
+	path = vim/.vim/bundle/supertab.git
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/.vim/bundle/smart-tabs.git"]
+	path = vim/.vim/bundle/smart-tabs.git
+	url = https://github.com/vim-scripts/smart-tabs.git
