@@ -40,9 +40,9 @@ pullrepo:
 
 copyhomebasics: 
 	@mkdir -p ~/.vim/colors
-	@mkdir ~/.vim/startup
-	@mkdir ~/.vim/autoload
-	@mkdir ~/.vim/bundle
+	@mkdir -p ~/.vim/startup
+	@mkdir -p ~/.vim/autoload
+	@mkdir -p ~/.vim/bundle
 	@cp ./vim/.vimrc ~/
 	@cp -r ./vim/.vim/startup ~/.vim
 	@cp -r ./vim/.vim/bundle ~/.vim 
