@@ -14,16 +14,21 @@ set number
 set tabstop=4
 set shiftwidth=4
 "set colorcolumn=110
+set encoding=utf-8
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+
+" NERDTree
+" Show Hidden Files
+let NERDTreeShowHidden=1
 " Open NERDTree automaticall when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -36,5 +41,11 @@ autocmd VimEnter * if exists("s:std_in") | wincmd p | endif
 
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-"let g:Powerline_symbols = 'fancy'
+
+
+
+
+
+" Powerline
+let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
